@@ -10,7 +10,7 @@
         <form action="../medici/prezentare.php" method="GET">
             <button type="submit" id="btn1" class="btn btn-danger btn-xs">Inapoi</button>
          </form>
-        <h1>Evidenta medici</h1>
+        <h1>Informatii generale medici</h1>
 
         <div id="cautare_medic" class="container">
             <p id="cautare">Cautare medic</p>

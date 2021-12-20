@@ -4,41 +4,67 @@
         <medic>
             <nume>Carmen</nume>
             <varsta>25</varsta>
-            <specializarea>Chirurgie</specializarea>
-            <locatie>Bucuresti</locatie>
             <lista_evidenta>
                 <animal>
                     <nume>Pita</nume>
                 </animal>
             </lista_evidenta>
+            <lista_activitati>
+                <activitate>
+                    <nume>vaccineaza</nume>
+                    <animal>Pita</animal>
+                </activitate>
+                <activitate>
+                    <nume>castreaza</nume>
+                    <animal>Pita</animal>
+                </activitate>
+            </lista_activitati>
         </medic>
         <medic>
             <nume>Maria</nume>
             <varsta>29</varsta>
-            <specializarea>Ortopedie</specializarea>
-            <locatie>Bucuresti</locatie>
             <lista_evidenta>
                 <animal>
                     <nume>Condorita</nume>
                 </animal>
             </lista_evidenta>
+            <lista_activitati>
+                <activitate>
+                    <nume>opereaza</nume>
+                    <animal>Yoshi</animal>
+                </activitate>
+                <activitate>
+                    <nume>castreaza</nume>
+                    <animal>Yoshi</animal>
+                </activitate>
+            </lista_activitati>
         </medic>
         <medic>
             <nume>Joshua</nume>
             <varsta>30</varsta>
-            <specializarea>Chirurgie plastica</specializarea>
-             <locatie>New York</locatie>
             <lista_evidenta>
                 <animal>
                     <nume>Panti</nume>
                 </animal>
             </lista_evidenta>
+            <lista_activitati>
+                <activitate>
+                    <nume>vaccineaza</nume>
+                    <animal>Panti</animal>
+                </activitate>
+                <activitate>
+                    <nume>castreaza</nume>
+                    <animal>Lola</animal>
+                </activitate>
+                <activitate>
+                    <nume>opereaza</nume>
+                    <animal>Lola</animal>
+                </activitate>
+            </lista_activitati>
         </medic>
         <medic>
             <nume>Andrei</nume>
             <varsta>45</varsta>
-            <specializarea>Oftalmologie</specializarea>
-            <locatie>Amsterdam</locatie>
             <lista_evidenta>
                 <animal>
                     <nume>Lola</nume>
@@ -47,14 +73,19 @@
                     <nume>Yoshi</nume>
                 </animal>
             </lista_evidenta>
+            <lista_activitati>
+                <activitate>
+                    <nume>vaccineaza</nume>
+                    <animal>Yoshi</animal>
+                </activitate>
+            </lista_activitati>
         </medic>
         <medic>
             <nume>Valentin</nume>
             <varsta>55</varsta>
-            <specializarea>Chirurgie</specializarea>
             <lista_evidenta>
                 <animal>
-                    <nume> </nume>
+                    <nume></nume>
                 </animal>
             </lista_evidenta>
         </medic>
