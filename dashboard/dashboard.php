@@ -9,7 +9,7 @@
 
     <div id="mySidenav" class="sidenav">
       <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-      <a href="../medici/medici.php">Medici</a>
+      <a href="../medici/prezentare.php">Medici</a>
       <a href="../animale/animale.php">Animale</a>
       <a href="../tratamente/tratamente.php">Tratamente</a>
       <a href="../activitati/activitati.php">Activitati</a>

@@ -7,7 +7,7 @@
     </head>
     <title>Medici</title>
     <body>
-        <form action="../dashboard/dashboard.php" method="GET">
+        <form action="../medici/prezentare.php" method="GET">
             <button type="submit" id="btn1" class="btn btn-danger btn-xs">Inapoi</button>
          </form>
         <h1>Evidenta medici</h1>
