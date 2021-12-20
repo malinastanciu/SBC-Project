@@ -1,0 +1,38 @@
+
+body {
+  background-image:  url('../imagini/edit.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 40% 60%;
+  background-position: center;
+}
+
+h1{
+  text-align: center;
+  font-size: 50px;
+}
+#cautare_medic{
+  font-weight: bold;
+  padding: 10px;
+}
+#cautare{
+ font-size: 30px;
+}
+form button{
+  padding: 5px;
+  margin: 10px;
+}
+b{
+  padding: 10px;
+}
+.container {
+  clear: both;
+  width: 200px;
+
+}
+
+.container input {
+    width: 100%;
+    clear: both;
+    margin-bottom: 10px;
+}
