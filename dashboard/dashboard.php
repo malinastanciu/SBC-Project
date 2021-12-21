@@ -13,7 +13,7 @@
       <a href="../medici/prezentare.php">Medici</a>
       <a href="../animale/prezentare.php">Animale</a>
       <a href="../tratamente/prezentare.php">Tratamente</a>
-      <a href="../activitati/activitati.php">Activitati</a>
+      <a href="../activitati/prezentare.php">Activitati</a>
     </div>
 
     <div id="main">

@@ -190,21 +190,25 @@
             <pret>250</pret>
         </tratament>
     </lista_tratamente>
+
     <lista_vizite>
         <vizita>
-            <animal>Panti</animal>
-            <tratament>Detartraj</tratament>
-            <luna>Octombrie</luna>
+            <luna>octombrie</luna>
+            <detartraj>neefectuat</detartraj>
+            <vaccin>neefectuat</vaccin>
+            <castrare>neefectuat</castrare>
+            <tuns>neefectuat</tuns>
+            <vitamine>neefectuat</vitamine>
+            <profit>nu</profit>
         </vizita>
         <vizita>
-            <animal>Panti</animal>
-            <tratament>Vaccin</tratament>
-            <luna>Ianuarie</luna>
-        </vizita>
-        <vizita>
-            <animal>Panti</animal>
-            <tratament>Tuns</tratament>
-            <luna>Octimbrie</luna>
+            <luna>decembrie</luna>
+            <detartraj>efectuat</detartraj>
+            <vaccin>efectuat</vaccin>
+            <castrare>efectuat</castrare>
+            <tuns>efectuat</tuns>
+            <vitamine>efectuat</vitamine>
+            <profit>da</profit>
         </vizita>
     </lista_vizite>
     <reguli>
@@ -230,21 +234,27 @@
         </regula>
         <regula>
             <if>
-                <nume>X</nume>
-                <var>mare</var>
+                <luna>X</luna>
+                <var>efectuat</var>
                 <rel>este</rel>
-                <what>talie</what>
-                <var>negru</var>
+                <what>detartraj</what>
+                <var>efectuat</var>
                 <rel>este</rel>
-                <what>culoare</what>
-                <var>feminin</var>
+                <what>vaccin</what>
+                <var>efectuat</var>
                 <rel>este</rel>
-                <what>gen</what>
+                <what>castrare</what>
+                <var>efectuat</var>
+                <rel>este</rel>
+                <what>tuns</what>
+                <var>efectuat</var>
+                <rel>este</rel>
+                <what>vitamine</what>
             </if>
             <then>
-                <nume>X</nume>
-                <var>fioros</var>
-                <what>trasatura</what>
+                <luna>X</luna>
+                <var>da</var>
+                <what>profit</what>
             </then>
         </regula>
     </reguli>
