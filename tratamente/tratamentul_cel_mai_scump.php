@@ -23,13 +23,15 @@
                     if(isset($_POST['search']))
                     {
                         (int)$pret = 0;
+                        $nume_tratament= '';
                         foreach ($xml->lista_tratamente->tratament as $tratament) {
                             if((int)$tratament->pret > (int)$pret){
                                 $pret = (int)$tratament->pret;
+                                $nume_tratament = $tratament->nume;
 
                             }
                         }
-                        echo "$pret";
+                        echo "Tratamentul cel mai scump este $nume_tratament si are pretul $pret de lei.";
                     }
             ?>
             </div>
