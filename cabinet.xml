@@ -120,6 +120,7 @@
             <talie>mare</talie>
             <culoare>negru</culoare>
             <gen>feminin</gen>
+            <trasatura>fioros</trasatura>
         </animal>
         <animal>
             <nume>Condorita</nume>
@@ -127,6 +128,7 @@
             <talie>medie</talie>
             <culoare>maro</culoare>
             <gen>feminin</gen>
+            <trasatura>bland</trasatura>
         </animal>
         <animal>
             <nume>Marcel</nume>
@@ -134,6 +136,7 @@
             <talie>mica</talie>
             <culoare>alb</culoare>
             <gen>masculin</gen>
+            <trasatura>bland</trasatura>
         </animal>
         <animal>
             <nume>Yoshi</nume>
@@ -141,6 +144,7 @@
             <talie>medie</talie>
             <culoare>alb</culoare>
             <gen>masculin</gen>
+            <trasatura>bland</trasatura>
         </animal>
         <animal>
             <nume>Lola</nume>
@@ -148,6 +152,7 @@
             <talie>mica</talie>
             <culoare>gri</culoare>
             <gen>feminin</gen>
+            <trasatura>bland</trasatura>
         </animal>
         <animal>
             <nume>Pita</nume>
@@ -185,5 +190,62 @@
             <pret>250</pret>
         </tratament>
     </lista_tratamente>
-
+    <lista_vizite>
+        <vizita>
+            <animal>Panti</animal>
+            <tratament>Detartraj</tratament>
+            <luna>Octombrie</luna>
+        </vizita>
+        <vizita>
+            <animal>Panti</animal>
+            <tratament>Vaccin</tratament>
+            <luna>Ianuarie</luna>
+        </vizita>
+        <vizita>
+            <animal>Panti</animal>
+            <tratament>Tuns</tratament>
+            <luna>Octimbrie</luna>
+        </vizita>
+    </lista_vizite>
+    <reguli>
+<!--    o regula cu if a and b and c then-->
+        <regula>
+            <if>
+                <nume>X</nume>
+                <var>mare</var>
+                <rel>este</rel>
+                <what>talie</what>
+                <var>negru</var>
+                <rel>este</rel>
+                <what>culoare</what>
+                <var>feminin</var>
+                <rel>este</rel>
+                <what>gen</what>
+            </if>
+            <then>
+                <nume>X</nume>
+                <var>fioros</var>
+                <what>trasatura</what>
+            </then>
+        </regula>
+        <regula>
+            <if>
+                <nume>X</nume>
+                <var>mare</var>
+                <rel>este</rel>
+                <what>talie</what>
+                <var>negru</var>
+                <rel>este</rel>
+                <what>culoare</what>
+                <var>feminin</var>
+                <rel>este</rel>
+                <what>gen</what>
+            </if>
+            <then>
+                <nume>X</nume>
+                <var>fioros</var>
+                <what>trasatura</what>
+            </then>
+        </regula>
+    </reguli>
 </cabinet>

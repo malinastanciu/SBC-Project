@@ -35,7 +35,6 @@
                                         if(strcmp($activitate->nume, "opereaza") == 0){
                                             $ok += 1;
                                         }
-
                                     }
                                     if($ok!=2){
                                         echo "$den_medic nu este un angajat eficient.";

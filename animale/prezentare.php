@@ -21,6 +21,9 @@
         <div id="cautare_medic" class="container">
             <button class="btn btn-danger"><a href="../animale/animal_abandonat.php">Animale abandonate</a></button>
         </div>
+        <div id="cautare_medic" class="container">
+            <button class="btn btn-danger"><a href="../animale/animal_fioros.php">Animale fioroase</a></button>
+        </div>
     </body>
 </html>
 
