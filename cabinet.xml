@@ -213,6 +213,7 @@
     </lista_vizite>
     <reguli>
 <!--    o regula cu if a and b and c then-->
+<!--    Daca X este de talie mare si de culoare neagra si de gen feminin atunci are trasatura fioros.-->
         <regula>
             <if>
                 <nume>X</nume>
