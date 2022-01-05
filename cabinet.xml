@@ -234,6 +234,7 @@
             </then>
         </regula>
         <regula>
+<!--            luna profitabila -->
             <if>
                 <luna>X</luna>
                 <var>efectuat</var>
@@ -256,6 +257,60 @@
                 <luna>X</luna>
                 <var>da</var>
                 <what>profit</what>
+            </then>
+        </regula>
+        <regula>
+<!--            tratament intre 300 si 600 de lei -->
+            <if>
+                <who>tratament</who>
+                <operation>mai mare decat</operation>
+                <val>300</val>
+                <operation>mai mic decat</operation>
+                <val>600</val>
+            </if>
+            <then>
+                <who>tratament</who>
+                <is>ieftin</is>
+            </then>
+        </regula>
+        <regula>
+<!--            tratament peste 700 de lei-->
+            <if>
+                <who>tratament</who>
+                <operation>mai mare decat</operation>
+                <val>700</val>
+
+            </if>
+            <then>
+                <who>tratament</who>
+                <is>scump</is>
+            </then>
+        </regula>
+        <regula>
+<!--            animal fara stapan-->
+            <if>
+                <who>X</who>
+                <operation>nu are</operation>
+                <val>stapan</val>
+
+            </if>
+            <then>
+                <who>X</who>
+                <is>animal fara stapan</is>
+            </then>
+        </regula>
+                <regula>
+<!--            animal abandonat-->
+            <if>
+                <who>X</who>
+                <operation>nu are</operation>
+                <val>stapan</val>
+                <operation>nu este</operation>
+                <val>evidenta</val>
+            </if>
+            <then>
+                <who>X</who>
+                <is>animal abandonat</is>
             </then>
         </regula>
     </reguli>
