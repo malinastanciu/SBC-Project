@@ -260,57 +260,63 @@
             </then>
         </regula>
         <regula>
-<!--            tratament intre 300 si 600 de lei -->
+<!--           regula cu AND:  tratament intre 300 si 600 de lei -->
             <if>
-                <who>tratament</who>
-                <operation>mai mare decat</operation>
-                <val>300</val>
-                <operation>mai mic decat</operation>
-                <val>600</val>
+                <tratament>X</tratament>
+                <pret_minim>300</pret_minim>
+                <pret_maxim>600</pret_maxim>
             </if>
             <then>
-                <who>tratament</who>
-                <is>ieftin</is>
+                <tratament>Castrare</tratament>
+            </then>
+
+<!--           regula cu AND:  tratament intre 0 si 300 de lei -->
+            <if>
+                <tratament>X</tratament>
+                <pret_minim>0</pret_minim>
+                <pret_maxim>300</pret_maxim>
+            </if>
+            <then>
+                <tratament>Vaccin</tratament>
+                <tratament>Vitamine</tratament>
             </then>
         </regula>
         <regula>
-<!--            tratament peste 700 de lei-->
+<!--           regula cu AND:  animal in functie de talie si gen-->
             <if>
-                <who>tratament</who>
-                <operation>mai mare decat</operation>
-                <val>700</val>
-
+                <animal>X</animal>
+                <talie>mare</talie>
+                <gen>feminin</gen>
             </if>
             <then>
-                <who>tratament</who>
-                <is>scump</is>
+                <animal>
+                    <nume>Panti</nume>
+                    <varsta>2</varsta>
+                </animal>
             </then>
-        </regula>
-        <regula>
-<!--            animal fara stapan-->
-            <if>
-                <who>X</who>
-                <operation>nu are</operation>
-                <val>stapan</val>
 
-            </if>
-            <then>
-                <who>X</who>
-                <is>animal fara stapan</is>
-            </then>
-        </regula>
-                <regula>
-<!--            animal abandonat-->
             <if>
-                <who>X</who>
-                <operation>nu are</operation>
-                <val>stapan</val>
-                <operation>nu este</operation>
-                <val>evidenta</val>
+                <animal>X</animal>
+                <talie>medie</talie>
+                <gen>feminin</gen>
             </if>
             <then>
-                <who>X</who>
-                <is>animal abandonat</is>
+                <animal>
+                    <nume>Condorita</nume>
+                    <varsta>18</varsta>
+                </animal>
+            </then>
+
+            <if>
+                <animal>X</animal>
+                <talie>mica</talie>
+                <gen>masculin</gen>
+            </if>
+            <then>
+                <animal>
+                    <nume>Marcel</nume>
+                    <varsta>10</varsta>
+                </animal>
             </then>
         </regula>
     </reguli>

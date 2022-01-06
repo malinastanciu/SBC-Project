@@ -16,6 +16,9 @@
             <button class="btn btn-danger"><a href="../animale/animale.php">Informatii generale animale</a></button>
         </div>
         <div id="cautare_medic" class="container">
+            <button class="btn btn-danger"><a href="../animale/animale_talie_gen.php">Animale in functie de talie si gen</a></button>
+        </div>
+        <div id="cautare_medic" class="container">
             <button class="btn btn-danger"><a href="../animale/animale_fara_stapan.php">Animale fara stapan</a></button>
         </div>
         <div id="cautare_medic" class="container">

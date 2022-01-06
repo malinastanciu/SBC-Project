@@ -21,24 +21,26 @@
                 <input type="numeric" name="pret_maxim" id="pret_maxim" placeholder="Pretul maxim"><br>
                 <input type="submit" class="btn btn-info btn-md" name="search" placeholder="Search">
             </form>
-            <?php
-                $xml = simplexml_load_file("../cabinet.xml");
+             <?php
+                 $xml = simplexml_load_file("../cabinet.xml");
                     if(isset($_POST['search']))
-                    {
-                        $ok = 0;
-                        $pret_minim = $_POST['pret_minim'];
-                        $pret_maxim = $_POST['pret_maxim'];
-                        foreach ($xml->lista_tratamente->tratament as $tratament) {
-                            if(($tratament->pret >= $pret_minim) && ($tratament->pret <= $pret_maxim)){
-                                echo "<b>Informatii tratament:</b>";
-                                echo "$tratament->nume ";
-                                echo "$tratament->pret lei<br>";
-
+                     {
+                         $lista = "";
+                         $pret_minim = $_POST['pret_minim'];
+                         $pret_maxim = $_POST['pret_maxim'];
+                         for($i = 0; $i<2; $i++){
+                            if(strcmp($pret_minim, $xml->reguli->regula[2]->if[$i]->pret_minim) == 0 and strcmp($pret_maxim, $xml->reguli->regula[2]->if[$i]->pret_maxim) == 0) {
+                                for($j=0; $j<count($xml->reguli->regula[2]->then[$i]->tratament); $j++){
+                                    $lista .= $xml->reguli->regula[2]->then[$i]->tratament[$j];
+                                    $lista .= ", ";
+                                }
                             }
-                        }
 
-                    }
-            ?>
+                         }
+                        $lista = substr_replace($lista, "", -2);
+                        echo "Tratamentele sunt: ".$lista;
+                     }
+             ?>
             </div>
         </div>
 
