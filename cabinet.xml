@@ -207,6 +207,18 @@
                 <nume>vitamine</nume>
             </lista_activitati>
         </vizita>
+        <vizita>
+            <luna>iunie</luna>
+            <lista_activitati>
+                <nume>detartraj</nume>
+            </lista_activitati>
+        </vizita>
+        <vizita>
+            <luna>august</luna>
+            <lista_activitati>
+                <nume>vaccin</nume>
+            </lista_activitati>
+        </vizita>
     </lista_vizite>
 
     <reguli>
@@ -279,8 +291,21 @@
             <then>
                 <mesaj>neprofitabila</mesaj>
             </then>
-        </regula>
 
+            <if>
+                <luna>iunie</luna>
+            </if>
+            <then>
+                <mesaj>neprofitabila</mesaj>
+            </then>
+
+            <if>
+                <luna>august</luna>
+            </if>
+            <then>
+                <mesaj>neprofitabila</mesaj>
+            </then>
+        </regula>
         <regula>
 <!--           regula cu AND:  tratament intre 300 si 600 de lei -->
             <if>
@@ -339,6 +364,23 @@
                     <nume>Marcel</nume>
                     <varsta>10</varsta>
                 </animal>
+            </then>
+        </regula>
+        <regula>
+            <if>
+                <varsta_minima>1</varsta_minima>
+                <varsta_maxima>5</varsta_maxima>
+                <stapan>da</stapan>
+                <talie>mare</talie>
+                <culoare1>negru</culoare1>
+                <culoare2>maro</culoare2>
+                <evidenta>da</evidenta>
+                <gen1>masculin</gen1>
+                <gen2>feminin</gen2>
+            </if>
+            <then>
+                <pozitiv>Poate participa la concurs.</pozitiv>
+                <negativ>Nu poate participa la concurs.</negativ>
             </then>
         </regula>
     </reguli>

@@ -34,9 +34,9 @@
                             }
                          }
                          echo "<br>";
-                         for($i = 0; $i<2; $i++){
+                         for($i = 0; $i<4; $i++){
                             if(strcmp($luna, $xml->reguli->regula[1]->if[$i]->luna) == 0) {
-                                 echo $luna." este ".$xml->reguli->regula[1]->then[$i]->mesaj;
+                                 echo "Luna ".$luna." este o luna ".$xml->reguli->regula[1]->then[$i]->mesaj.".";
                             }
                          }
 
