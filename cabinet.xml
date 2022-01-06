@@ -113,6 +113,7 @@
             <animal>Lola</animal>
         </stapan>
     </lista_stapani>
+
     <lista_animale>
         <animal>
             <nume>Panti</nume>
@@ -207,8 +208,8 @@
             </lista_activitati>
         </vizita>
     </lista_vizite>
-    <reguli>
 
+    <reguli>
         <regula>
             <!--    o regula cu if a and b and c then-->
             <!--    Daca X este de talie mare si de culoare neagra si de gen feminin atunci are trasatura fioros.-->
