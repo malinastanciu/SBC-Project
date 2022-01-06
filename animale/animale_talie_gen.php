@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="stylesheet" href="../animale/animale.css">
+        <link rel="stylesheet" href="../animale/animale_talie_gen.css">
         <link rel="stylesheet" href="../static/bootstrap.min.css">
 
     </head>

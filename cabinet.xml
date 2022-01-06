@@ -120,7 +120,6 @@
             <talie>mare</talie>
             <culoare>negru</culoare>
             <gen>feminin</gen>
-            <trasatura>fioros</trasatura>
         </animal>
         <animal>
             <nume>Condorita</nume>
@@ -128,7 +127,6 @@
             <talie>medie</talie>
             <culoare>maro</culoare>
             <gen>feminin</gen>
-            <trasatura>bland</trasatura>
         </animal>
         <animal>
             <nume>Marcel</nume>
@@ -136,7 +134,6 @@
             <talie>mica</talie>
             <culoare>alb</culoare>
             <gen>masculin</gen>
-            <trasatura>bland</trasatura>
         </animal>
         <animal>
             <nume>Yoshi</nume>
@@ -144,7 +141,6 @@
             <talie>medie</talie>
             <culoare>alb</culoare>
             <gen>masculin</gen>
-            <trasatura>bland</trasatura>
         </animal>
         <animal>
             <nume>Lola</nume>
@@ -152,7 +148,6 @@
             <talie>mica</talie>
             <culoare>gri</culoare>
             <gen>feminin</gen>
-            <trasatura>bland</trasatura>
         </animal>
         <animal>
             <nume>Pita</nume>
@@ -194,71 +189,97 @@
     <lista_vizite>
         <vizita>
             <luna>octombrie</luna>
-            <detartraj>neefectuat</detartraj>
-            <vaccin>neefectuat</vaccin>
-            <castrare>neefectuat</castrare>
-            <tuns>neefectuat</tuns>
-            <vitamine>neefectuat</vitamine>
-            <profit>nu</profit>
+            <lista_activitati>
+                <nume>detartraj</nume>
+                <nume>vaccin</nume>
+                <nume>tuns</nume>
+            </lista_activitati>
         </vizita>
         <vizita>
             <luna>decembrie</luna>
-            <detartraj>efectuat</detartraj>
-            <vaccin>efectuat</vaccin>
-            <castrare>efectuat</castrare>
-            <tuns>efectuat</tuns>
-            <vitamine>efectuat</vitamine>
-            <profit>da</profit>
+            <lista_activitati>
+                <nume>detartraj</nume>
+                <nume>vaccin</nume>
+                <nume>tuns</nume>
+                <nume>castrare</nume>
+                <nume>operatie</nume>
+                <nume>vitamine</nume>
+            </lista_activitati>
         </vizita>
     </lista_vizite>
     <reguli>
-<!--    o regula cu if a and b and c then-->
-<!--    Daca X este de talie mare si de culoare neagra si de gen feminin atunci are trasatura fioros.-->
+
         <regula>
+            <!--    o regula cu if a and b and c then-->
+            <!--    Daca X este de talie mare si de culoare neagra si de gen feminin atunci are trasatura fioros.-->
             <if>
                 <nume>X</nume>
-                <var>mare</var>
-                <rel>este</rel>
-                <what>talie</what>
-                <var>negru</var>
-                <rel>este</rel>
-                <what>culoare</what>
-                <var>feminin</var>
-                <rel>este</rel>
-                <what>gen</what>
+                <talie>mare</talie>
+                <culoare>negru</culoare>
+                <gen>feminin</gen>
             </if>
             <then>
-                <nume>X</nume>
-                <var>fioros</var>
-                <what>trasatura</what>
+                <trasatura>fioros</trasatura>
             </then>
+
+            <if>
+                <nume>X</nume>
+                <talie>medie</talie>
+                <culoare>maro</culoare>
+                <gen>feminin</gen>
+            </if>
+            <then>
+                <trasatura>bland</trasatura>
+            </then>
+
+            <if>
+                <nume>X</nume>
+                <talie>mica</talie>
+                <culoare>alb</culoare>
+                <gen>masculin</gen>
+            </if>
+            <then>
+                <trasatura>bland</trasatura>
+            </then>
+
+            <if>
+                <nume>X</nume>
+                <talie>medie</talie>
+                <culoare>alb</culoare>
+                <gen>masculin</gen>
+            </if>
+            <then>
+                <trasatura>bland</trasatura>
+            </then>
+
+            <if>
+                <nume>X</nume>
+                <talie>mica</talie>
+                <culoare>gri</culoare>
+                <gen>feminin</gen>
+            </if>
+            <then>
+                <trasatura>bland</trasatura>
+            </then>
+
         </regula>
         <regula>
 <!--            luna profitabila -->
             <if>
-                <luna>X</luna>
-                <var>efectuat</var>
-                <rel>este</rel>
-                <what>detartraj</what>
-                <var>efectuat</var>
-                <rel>este</rel>
-                <what>vaccin</what>
-                <var>efectuat</var>
-                <rel>este</rel>
-                <what>castrare</what>
-                <var>efectuat</var>
-                <rel>este</rel>
-                <what>tuns</what>
-                <var>efectuat</var>
-                <rel>este</rel>
-                <what>vitamine</what>
+                <luna>decembrie</luna>
             </if>
             <then>
-                <luna>X</luna>
-                <var>da</var>
-                <what>profit</what>
+                <mesaj>profitabila</mesaj>
+            </then>
+
+            <if>
+                <luna>octombrie</luna>
+            </if>
+            <then>
+                <mesaj>neprofitabila</mesaj>
             </then>
         </regula>
+
         <regula>
 <!--           regula cu AND:  tratament intre 300 si 600 de lei -->
             <if>
